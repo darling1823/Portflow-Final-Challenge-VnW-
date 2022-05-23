@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
+    max-width: 1920px;
 }
 
 header{
@@ -51,6 +52,60 @@ li:hover{
     font-size: 1vw;
 }
 
+.orange{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 780px;
+    color: #FFF;
+    background-image: url(/assets/mainorange.png);
+    background-position: center;
+}
+
+h2{
+    font-size: 4vw;
+    margin-bottom: 3vw;
+}
+
+h3{
+    font-size: 1.7vw;
+    font-weight: 300;
+}
+
+article{
+    padding-left: 5.5vw;
+}
+
+@media screen and (max-width: 1440px){
+    .orange{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    h1{
+        font-size: 2vw;
+    }
+
+    ul{
+        font-size: 1.2vw;
+        width: 32vw;
+    }
+
+    li{
+        width: 3.5vw;
+    }
+
+    li:hover{
+        font-size: 1.5vw;
+    }
+
+    .orange{
+        background-position-x: -650px;
+    }
+}
+
 @media screen and (max-width: 768px){
     .menu{
         display: initial;
@@ -62,7 +117,7 @@ li:hover{
         align-items: center;
         background-color: #0C0500;
         height: 27px;
-        width: 30vw;
+        width: 27vw;
     }
 
     header{
@@ -70,10 +125,20 @@ li:hover{
         margin: 0;
         padding: 0;
         justify-content: space-between;
+        width: 55%;
+    }
+
+    h1{
+        font-size: 2.5vw;
     }
 
     nav{
         display: none;
+    }
+
+    .orange{
+        background-position-x: -930px;
+        height: 620px;
     }
 
 }
@@ -91,6 +156,11 @@ li:hover{
     h1{
         text-align: center;
         font-size: 4vw;
+    }
+
+    .orange{
+        background-position-x: -1220px;
+        height: 640px;
     }
 
 
