@@ -90,7 +90,6 @@ article{
 main figure{
     width: 20vw;
     height: 390px;
-    border: solid;
     position: relative;
     margin-right: 1vw;
     margin-bottom: 1vw;
@@ -98,20 +97,26 @@ main figure{
 
 main img{
     width: 20vw;
+    transition: 1s;
 }
 
 main img:hover{
-    width: 22vw;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: 1s;
     position: absolute;
-    top: 0;
-    left: 1px;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: #0C0500 1px 1px 5px 2px;
 }
-
-
 
 @media screen and (max-width: 1440px){
     .orange{
         height: 700px;
+    }
+
+    main figure{
+        height: 290px;
     }
 }
 
@@ -135,6 +140,10 @@ main img:hover{
 
     .orange{
         background-position-x: -650px;
+    }
+
+    main figure{
+        height: 210px;
     }
 }
 
@@ -191,6 +200,75 @@ main img:hover{
 
     h3{
         font-size: 3vw;
+    }
+
+    .photos{
+        flex-direction: column;
+        border: none;
+        padding-top: 10vw;
+    }
+
+    main figure{
+        height: auto;
+        width: auto;
+        overflow: hidden;
+        margin-bottom: 5vw;
+    }
+
+    .southBox and .south{
+        order: 10;
+    }
+
+    .cheeseBox{
+        order: 8;
+    }
+
+    .muanceBox{
+        order: 3;
+    }
+
+    .eyeBox{
+        order: 6;
+    }
+
+    .kitBox{
+        order: 1;
+    }
+
+    .cupBox{
+        order: 7;
+    }
+
+    .designBox{
+        order: 4;
+    }
+
+    .fitBox{
+        order: 11;
+    }
+
+    .messengerBox{
+        order: 9;
+    }
+
+    .coffeBox{
+        order: 12;
+    }
+
+    .camBox{
+        order: 2;
+    }
+
+    .polaroidBox{
+        order: 5;
+    }
+
+    main img{
+        width: 60vw;
+    }
+
+    main img:hover{
+        position: static;
     }
 }
 
