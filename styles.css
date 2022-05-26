@@ -110,6 +110,42 @@ main img:hover{
     box-shadow: #0C0500 1px 1px 5px 2px;
 }
 
+footer{
+    background-color: #e5e5e5;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer img{
+    width: 20vw;
+}
+
+.right{
+    font-weight: 800;
+    font-size: 1vw;
+    margin-left: 10vw;
+}
+
+div p{
+    font-size: 0.7vw
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 27vw;
+    margin-left: 2vw;
+}
+
+button{
+    display: none;
+}
+
 @media screen and (max-width: 1440px){
     .orange{
         height: 700px;
@@ -145,6 +181,25 @@ main img:hover{
     main figure{
         height: 210px;
     }
+
+    footer img{
+        width: 25vw;
+    }
+    
+    .right{
+        font-weight: 800;
+        font-size: 1.4vw;
+        margin-left: 10vw;
+    }
+    
+    div p{
+        font-size: 1vw
+    }
+
+    div{
+        width: 36vw;
+    }
+
 }
 
 @media screen and (max-width: 768px){
@@ -215,7 +270,7 @@ main img:hover{
         margin-bottom: 5vw;
     }
 
-    .southBox and .south{
+    .southBox{
         order: 10;
     }
 
@@ -270,6 +325,65 @@ main img:hover{
     main img:hover{
         position: static;
     }
+
+    footer{
+        background-color: white;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    footer figure{
+        background-color: #7FDBD4;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer img{
+        width: 40vw;
+        
+    }
+    
+    .right{
+        font-weight: 800;
+        font-size: 1.5vw;
+        margin-left: 0;
+        margin-top: 1.2vw;
+    }
+    
+    div p{
+        font-size: 1.2vw
+    }
+    
+    div{
+        position: relative;
+        display: block;
+        flex-wrap: wrap;
+        width: 22vw;
+        margin: 0;
+    }
+    
+    button{
+        display: initial;
+        position: absolute;
+        left: 80vw;
+        bottom: 2vw;
+        color: #707070;
+        font-size: 2vw;
+        background-color: #333333;
+        width: 10vw;
+        padding-top: 0.7vw;
+        padding-bottom: 0.7vw;
+        border: none;
+    }
+    
 }
 
 @media screen and (max-width:425px){
@@ -305,6 +419,30 @@ main img:hover{
     h3{
         font-size: 5vw;
     }
+
+    footer img{
+        width: 40vw;
+        
+    }
+    
+    .right{
+        font-size: 2vw;
+    }
+    
+    div p{
+        font-size: 1.9vw
+    }
+    
+    div{
+        width: 32vw;
+        margin: 0;
+    }
+    
+    button{
+        font-size: 2vw;
+        width: 10vw;
+        bottom: 4vw;
+    }
     
 }
 
@@ -312,4 +450,29 @@ main img:hover{
     .orange{
         height: 600px;
     }
+
+    footer img{
+        width: 50vw;
+        
+    }
+    
+    .right{
+        font-size: 3vw;
+    }
+    
+    div p{
+        font-size: 2.5vw
+    }
+    
+    div{
+        width: 42vw;
+        margin: 0;
+    }
+    
+    button{
+        font-size: 3vw;
+        width: 13vw;
+        left: 77vw;
+    }
+
 }
