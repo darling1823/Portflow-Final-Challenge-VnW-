@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
+}
+
+body{
     max-width: 1920px;
 }
 
@@ -14,6 +17,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    top: 0;
     margin-right: 5.2vw;
     margin-left: 5.2vw;
     padding-top: 1.5vw;
@@ -59,7 +63,7 @@ li:hover{
     justify-content: center;
     height: 780px;
     color: #FFF;
-    background-image: url(/assets/mainorange.png);
+    background-image: url(./assets/mainorange.png);
     background-position: center;
 }
 
@@ -144,6 +148,32 @@ div{
 
 button{
     display: none;
+}
+
+.backTop{
+    text-decoration: none;
+    color: #707070;
+}
+
+@media screen and (min-width: 2370px){
+    body{
+        margin-left: 12%;
+    }
+
+    main figure{
+        width: 16vw;
+        height: 240px;
+        height: auto;
+    }
+
+    main img{
+        width: 15vw;
+    }
+
+    main img:hover{
+        position: static;
+    }
+
 }
 
 @media screen and (max-width: 1440px){
@@ -375,7 +405,6 @@ button{
         position: absolute;
         left: 80vw;
         bottom: 2vw;
-        color: #707070;
         font-size: 2vw;
         background-color: #333333;
         width: 10vw;
